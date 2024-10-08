@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.whole{
+    background-color: #e5e5fd;
+    border: 7px solid #1d1e4c;
+}
+
+.pic{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.container{
+    
+    display: flex;
+    justify-content: center;
+}
+.bio{
+    margin-top: 30px;
+    height: 1200px;
+    width: 60%;
+}
+
+.bio h2{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 200px;
+    margin-bottom: 20px;
+}
+
+.bio p{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
+

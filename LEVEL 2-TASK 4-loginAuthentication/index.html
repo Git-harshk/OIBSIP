@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="loginForm" class="form-container">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" placeholder="Username" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+            <p><a href="#" onclick="showRegisterForm()">Register</a></p>
+        </div>
+
+        <div id="registerForm" class="form-container" style="display: none;">
+            <h2>Register</h2>
+            <input type="text" id="registerUsername" placeholder="Username" required>
+            <input type="password" id="registerPassword" placeholder="Password" required>
+            <button onclick="register()">Register</button>
+            <p><a href="#" onclick="showLoginForm()">Login</a></p>
+        </div>
+
+        <div id="securedPage" class="secured-container" style="display: none;">
+            <h2>Welcome, <span id="welcomeUsername"></span>!</h2>
+            <p>This is a secured page only accessible to logged-in users.</p>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+        <div id="message" class="message"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
